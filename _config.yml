@@ -150,7 +150,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "https://maglovskinenad.github.io/nenad.github.io/"
+baseurl: "https://maglovskinenad.github.io/nenad.github.io"
 
 # ------------ The following options are not recommended to be modified ------------------
 
