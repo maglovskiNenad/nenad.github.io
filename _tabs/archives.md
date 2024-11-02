@@ -4,9 +4,9 @@ icon: fas fa-archive
 order: 3
 ---
 
-## Starting My DevOps Journey 🚀
+## Starting My DevOps Journey 
 
-Hello, world! 👋 As a junior DevOps engineer at the beginning of my career, I wanted to share some of my experiences, challenges, and goals. DevOps is a fascinating field that brings together development and operations, creating streamlined processes and systems that allow teams to deliver software efficiently and reliably. I’m both excited and overwhelmed by all there is to learn, but I’m eager to dive in.
+Hello, world! As a junior DevOps engineer at the beginning of my career, I wanted to share some of my experiences, challenges, and goals. DevOps is a fascinating field that brings together development and operations, creating streamlined processes and systems that allow teams to deliver software efficiently and reliably. I’m both excited and overwhelmed by all there is to learn, but I’m eager to dive in.
 
 ## Learning the Foundations
 
@@ -24,13 +24,13 @@ Using tools like **Terraform** and **Ansible** has introduced me to **Infrastruc
 ### Monitoring and Log Management
 Monitoring and logging are crucial for keeping systems stable and understanding what’s happening within them. I’m using **Prometheus** for metrics and **ELK stack** (Elasticsearch, Logstash, Kibana) to manage logs. It’s satisfying to set up these tools and see real-time data and insights into what’s happening.
 
-## Challenges Along the Way 🧗‍♂️
+## Challenges Along the Way 
 
 One of the biggest challenges I’ve faced so far is **getting comfortable with the command line and scripting**. As a DevOps engineer, automation is key, and that often means writing scripts and commands. I’m focusing on learning **Bash** and **Python** for now, but there’s always something new to learn.
 
 Another challenge has been **understanding complex cloud environments**. With platforms like **AWS, Azure, and GCP**, each has its own set of tools, configurations, and best practices. Right now, I’m focusing on learning the basics of AWS, but I hope to expand to other platforms soon.
 
-## Goals for the Next Few Months 🎯
+## Goals for the Next Few Months 
 
 I’m setting some short-term goals to keep my learning structured and focused:
 
@@ -42,7 +42,7 @@ I’m setting some short-term goals to keep my learning structured and focused:
 
 As I continue this journey, I’m motivated by how impactful DevOps can be in the real world. It’s amazing to think that the work I’m doing can help make software more reliable and efficient for users around the globe. I plan to keep sharing my progress and any insights I gain along the way, so stay tuned!
 
-Thanks for reading, and if you’re on a similar path, feel free to reach out or leave a comment! 😊
+Thanks for reading, and if you’re on a similar path, feel free to reach out or leave a comment! 
 
 ---
 
