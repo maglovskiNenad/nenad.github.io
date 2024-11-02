@@ -2,10 +2,6 @@
 layout: archives
 icon: fas fa-archive
 order: 3
-title: First Steps, Challenges, and Goals
-date: 2023-11-02
-author: Junior DevOps Engineer
-tags: [DevOps, Career, Cloud, CI/CD, Learning]
 ---
 
 ## Starting My DevOps Journey 🚀
