@@ -1,5 +1,5 @@
 ---
-title: About me
+title: About
 categories: [about me]
 date: 2024-11-03 15:18:25 +0800
 author: Nenad Maglovski
