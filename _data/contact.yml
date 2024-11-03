@@ -3,10 +3,6 @@
 - type: github
   icon: "fab fa-github"
 
-- type: linkedin
-  icon: "fab fa-linkedin"
-  url: ""
-
 - type: instagram
   icon: "fab fa-instagram"
   url: "https://www.instagram.com/maglovski_nenad"
