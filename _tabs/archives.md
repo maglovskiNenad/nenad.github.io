@@ -4,31 +4,6 @@ icon: fas fa-archive
 order: 2
 ---
 
-## Starting My DevOps Journey 
-
-Hello, world! As a junior DevOps engineer at the beginning of my career, I wanted to share some of my experiences, challenges, and goals. DevOps is a fascinating field that brings together development and operations, creating streamlined processes and systems that allow teams to deliver software efficiently and reliably. I’m both excited and overwhelmed by all there is to learn, but I’m eager to dive in.
-
-## Learning the Foundations
-
-One of the first things I realized was the importance of building a strong foundation. Here are a few areas I've been focusing on:
-
-### CI/CD (Continuous Integration and Continuous Deployment)
-Learning **CI/CD** has been both challenging and rewarding. I’m experimenting with tools like **Jenkins, GitHub Actions, and GitLab CI**, automating parts of the development pipeline to make sure everything runs smoothly. CI/CD is all about getting code changes to production faster and with fewer errors, and I’m constantly amazed at how these tools make it possible.
-
-### Docker and Containerization
-**Containers** are like lightweight virtual machines that keep applications isolated and consistent across environments. Working with **Docker** has shown me how powerful containerization can be for deploying applications. I’m currently practicing setting up Docker containers and configuring environments for testing and deployment.
-
-### Infrastructure as Code (IaC)
-Using tools like **Terraform** and **Ansible** has introduced me to **Infrastructure as Code (IaC)**, which allows infrastructure to be managed through code. This makes it easier to keep track of changes, and it’s a huge plus for scalability. Right now, I’m learning the basics of defining resources in Terraform and automating server configurations with Ansible.
-
-### Monitoring and Log Management
-Monitoring and logging are crucial for keeping systems stable and understanding what’s happening within them. I’m using **Prometheus** for metrics and **ELK stack** (Elasticsearch, Logstash, Kibana) to manage logs. It’s satisfying to set up these tools and see real-time data and insights into what’s happening.
-
-## Challenges Along the Way 
-
-One of the biggest challenges I’ve faced so far is **getting comfortable with the command line and scripting**. As a DevOps engineer, automation is key, and that often means writing scripts and commands. I’m focusing on learning **Bash** and **Python** for now, but there’s always something new to learn.
-
-Another challenge has been **understanding complex cloud environments**. With platforms like **AWS, Azure, and GCP**, each has its own set of tools, configurations, and best practices. Right now, I’m focusing on learning the basics of AWS, but I hope to expand to other platforms soon.
 
 ## Goals for the Next Few Months 
 
