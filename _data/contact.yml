@@ -3,9 +3,9 @@
 - type: github
   icon: "fab fa-github"
 
-- type: instagram
-  icon: "fab fa-instagram"
-  url: "https://www.instagram.com/maglovski_nenad"
+# type: instagram
+# icon: "fab fa-instagram"
+# url: "https://www.instagram.com/maglovski_nenad"
 
 - type: rss
   icon: "fas fa-rss"
