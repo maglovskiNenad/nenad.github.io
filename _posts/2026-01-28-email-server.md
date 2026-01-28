@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Email Server
-date: 2026-01-28 21:41:00 -500 
-categories: [homelab,email,server]
-tages: [email,server]
+title: "Email Server"
+date: 2026-01-28 09:00:00 -0500
+categories: homelab
+tages: email server
 image:
     path: /assets/img/headers/emailServer.png
 ---
