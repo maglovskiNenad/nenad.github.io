@@ -18,11 +18,11 @@ My choice:
 
 Hetzner is a German hosting provider offering dedicated servers, cloud infrastructure, and data center services, known for reliable performance and strong price-to-to-performance ratio
 
-![hatzner](/nenad.github.io/assets/lib/hatzner.png)
+![hatzner]({{ site.baseurl }}/assets/lib/hatzner.png)
 
 Mailcow is an open-source, Docker-based mail server stack that simplifies deploying and managing a secure, full-featured email system.
 
-![mailcow](/nenad.github.io/assets/lib/mailCow.png)
+![mailcow]({{ site.baseurl }}/assets/lib/mailCow.png)
 
 
 ### The first step is setting up the firewall:
@@ -53,14 +53,14 @@ Change the host nama
     nano /etc/hostname
 ```
 
-![Hostname](/nenad.github.io/assets/lib/change_name1.png)
+![Hostname]({{ site.baseurl }}/assets/lib/change_name1.png)
 
 
 ```bash
     nano /etc/hosts
 ```
 
-![Hostname](/nenad.github.io/assets/lib/chanege_name2.png)
+![Hostname]({{ site.baseurl }}/assets/lib/chanege_name2.png)
 
 
 - Change time and reboot
@@ -71,7 +71,7 @@ Change the host nama
     apt-get upgrade -y
 ```
 
-![Time](/nenad.github.io/assets/lib/change_time.png)
+![Time]({{ site.baseurl }}/assets/lib/change_time.png)
 
 
 ## Installation ***mailcow***
@@ -89,7 +89,7 @@ Change the host nama
 
 And this is how you know
 
-![Docker](/nenad.github.io/assets/lib/docker.png)
+![Docker]({{ site.baseurl }}/assets/lib/docker.png)
 
 
 Need more one reboot
