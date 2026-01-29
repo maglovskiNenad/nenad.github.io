@@ -18,11 +18,11 @@ My choice:
 
 Hetzner is a German hosting provider offering dedicated servers, cloud infrastructure, and data center services, known for reliable performance and strong price-to-to-performance ratio
 
-![hatzner](/assets/lib/hatzner.png)
+![hatzner](/assets/img/lib/hatzner.png)
 
 Mailcow is an open-source, Docker-based mail server stack that simplifies deploying and managing a secure, full-featured email system.
 
-![mailcow](/assets/lib/mailCow.png)
+![mailcow](/assets/img/lib/mailCow.png)
 
 
 ### The first step is setting up the firewall:
@@ -53,14 +53,14 @@ Change the host nama
     nano /etc/hostname
 ```
 
-![Hostname](/assets/lib/change_name1.png)
+![Hostname](/assets/img/lib/change_name1.png)
 
 
 ```bash
     nano /etc/hosts
 ```
 
-![Hostname](/assets/lib/chanege_name2.png)
+![Hostname](/assets/img/lib/chanege_name2.png)
 
 
 - Change time and reboot
@@ -71,7 +71,7 @@ Change the host nama
     apt-get upgrade -y
 ```
 
-![Time](/assets/lib/change_time.png)
+![Time](/assets/img/lib/change_time.png)
 
 
 ## Installation ***mailcow***
@@ -89,7 +89,7 @@ Change the host nama
 
 And this is how you know
 
-![Docker](/assets/lib/docker.png)
+![Docker](/assets/img/lib/docker.png)
 
 
 Need more one reboot
