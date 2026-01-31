@@ -8,7 +8,7 @@ image:
     path: /assets/img/headers/emailServer.png
 ---
 
-# Building email server
+# Building email server (Ubuntu)
 
 This documentation describes email server and its core functionalities. It includes information on configuration, maintenance, and security settings. The goal is to provide a clear and practical reference for system administrators and technical staff who use or maintain the server. The document serves as a guide for efficient management and reliable email communication.
 
@@ -135,3 +135,17 @@ Installing docker-compose
 ```bash
     nano mailcow.conf
 ```
+
+Read the docs till the end so you can be sure that all is properly done.
+
+After configuration:
+
+```bash
+    docker-compose pull
+    docker compose up -d
+```
+
+
+Done!!!!
+
+You can now access https://${MAILCOW_HOSTNAME} with default credentials admin + password
