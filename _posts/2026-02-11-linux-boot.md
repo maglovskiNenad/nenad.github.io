@@ -2,7 +2,7 @@
 layout: post
 title: "Linux Boot"
 date: 2026-02-11 09:00:00 -0500
-categories: homelab
+categories: linux
 tages: linux boot
 image:
     path: /assets/img/headers/linuxBoot.png
