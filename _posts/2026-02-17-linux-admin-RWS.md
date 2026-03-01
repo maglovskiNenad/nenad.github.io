@@ -4,6 +4,8 @@ title: "Linux System Administrator Real-World Scenario"
 date: 2026-02-17 09:00:00 -0500
 categories: homelab
 tages: linux admin real world scenario
+image:
+    path: /assets/img/headers/RWS.jpeg
 ---
 
 
