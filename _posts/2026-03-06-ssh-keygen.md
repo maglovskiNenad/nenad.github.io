@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Copying an SSH Key from Windows to a Linux Server"
-date: 2026-03-06 09:00:00 -0500
+date: 2026-03-05 09:00:00 -0500
 categories: linux
-tages: ssh_keygen server connection ssh
+tages: ssh-keygen server connection Windows Linux
 image:
     path: /assets/img/headers/ssh_keygen.png
 ---
