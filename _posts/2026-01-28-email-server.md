@@ -2,7 +2,7 @@
 layout: post
 title: "Email Server"
 date: 2026-01-28 09:00:00 -0500
-categories: homelab
+categories: linux
 tages: email server
 image:
     path: /assets/img/headers/emailServer.png
