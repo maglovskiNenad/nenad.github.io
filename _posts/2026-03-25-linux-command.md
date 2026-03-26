@@ -11,7 +11,7 @@ image:
 
 # A section devoted to Linux commands, their often confusing meanings, and clear explanations of what they do.
 
-
+## tmux
 tmux is a terminal multiplexer. That means it lets you open and manage multiple terminal sessions inside one terminal window. Instead of opening many separate terminal windows, you can keep everything organized inside tmux using sessions, windows, and panes. This is one of the main reasons tmux is so useful for Linux administration, server work, and long-running tasks over SSH.
 
 ```bash
@@ -74,6 +74,65 @@ Ctrl+b "             # Split window into top/bottom panes.
 Ctrl+b o             # Cycle through panes.
 Ctrl+b d             # Leave tmux without stopping programs.
 tmux attach          # Reattach later.
+```
+
+---
+
+## nice
+
+The nice command is used to start a process with a specific priority.
+
+In Linux, processes compete for CPU time.
+nice allows you to make a process less important or more important to the scheduler.
+
+Important idea:
+
+A higher nice value means lower priority.
+A lower nice value means higher priority.
+
+```bash
+# Show the current shell nice value
+nice                 # Show the current nice value.
+
+# Start a command with a specific nice value
+nice -n 10 command   # Start command with lower priority.
+nice -n 5 command    # Start command with slightly lower priority.
+nice -n 19 command   # Start command with very low priority.
+
+# Start a command with higher priority
+nice -n -5 command   # Start command with higher priority (usually requires root).
+nice -n -10 command  # Start command with much higher priority (usually requires root).
+nice -n -20 command  # Start command with highest priority (root only).
+
+# Default behavior
+command              # Start command with default nice value 0.
+nice -n 0 command    # Start command with normal priority.
+
+# Change priority of an already running process
+renice 10 -p 1234    # Change process 1234 to nice value 10.
+renice 5 -p 1234     # Change process 1234 to nice value 5.
+renice 19 -p 1234    # Change process 1234 to very low priority.
+
+# Set higher priority for a running process
+renice -5 -p 1234    # Raise priority of process 1234 (usually requires root).
+renice -10 -p 1234   # Raise priority more (usually requires root).
+
+# Change priority by user
+renice 10 -u username # Change priority for all processes of a user.
+
+# Change priority by process group
+renice 10 -g 5678    # Change priority for a process group.
+
+# Useful monitoring commands
+ps -o pid,ni,comm -p 1234 # Show PID, nice value, and command.
+ps -eo pid,ni,comm | grep command # Find nice values for matching processes.
+top                  # View running processes and their priorities.
+htop                 # Interactive process viewer, if installed.
+
+# Nice value range
+# -20 = highest priority
+#  0  = default priority
+# 19  = lowest priority
 ```
 
 ---
