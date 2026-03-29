@@ -136,3 +136,52 @@ htop                 # Interactive process viewer, if installed.
 ```
 
 ---
+
+## Bound
+
+- . (dot) Atom matches with any character.
+- ^ (caret) Atom matches with the beginning of a line.
+- $ (dollar sign) Atom matches with the end of a line.
+
+## Bracket Expression
+
+Bracket expression lists also accept classes instead of just single characters and ranges. Traditional character classes are:
+
+- [:alnum:] Represents an alphanumeric character.
+- [:alpha:] Represents an alphabetic character.
+- [:ascii:] Represents a character that fits into the ASCII character set.
+- [:blank:] Represents a blank character, that is, a space or a tab.
+- [:cntrl:] Represents a control character.
+- [:digit:] Represents a digit (0 through 9).
+- [:graph:] Represents any printable character except space.
+- [:lower:] Represents a lowercase character.
+- [:print:] Represents any printable character including space.
+- [:punct:] Represents any printable character which is not a space or an alphanumeric character.
+- [:space:] Represents white-space characters: space, form-feed (\f), newline (\n), carriage return (\r),horizontal tab (\t), and vertical tab (\v).
+- [:upper:] Represents an uppercase letter.
+- [:xdigit:] Represents hexadecimal digits (0 through F).
+
+## Quantifiers
+
+The reach of an atom, either a single character atom or a bracket atom, can be adjusted using an
+atom quantifier.
+
+```bash
+*    # 0 or more
++    # 1 or more
+?    # 0 or 1
+{3}  # exactly 3
+{2,5} # from 2 to 5
+{2,} # 2 or more
+```
+
+## Bounds 
+
+A bound is an atom quantifier that, as the name implies, allows a user to specify precise quantity
+boundaries for an atom. In extended regular expressions, a bound may appear in three forms:
+
+- {i} The atom must appear exactly i times (i an integer number). For example, [[:blank:]]{2}matches with exactly two blank characters.
+- {i,} The atom must appear at least i times (i an integer number). For example, [[:blank:]]{2,} matches with any sequence of two or more blank characters.
+- {i,j} The atom must appear at least i times and at most j times (i and j integer numbers, j greater then i). For example, xyz{2,4} matches the xy string followed by two to four of the z character.
+
+---
