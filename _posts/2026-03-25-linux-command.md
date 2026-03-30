@@ -185,3 +185,67 @@ boundaries for an atom. In extended regular expressions, a bound may appear in t
 - {i,j} The atom must appear at least i times and at most j times (i and j integer numbers, j greater then i). For example, xyz{2,4} matches the xy string followed by two to four of the z character.
 
 ---
+
+## grep, egrep, fgrep
+
+One of the most common uses of grep is to facilitate the inspecion of long files,using the regular expression as a filter applied to each line.
+
+```bash
+$ grep '^options' /etc/modprobe.d/alsa-base.conf
+
+options snd-pcsp index=-2
+options snd-usb-audio index=-2
+options bt87x index=-2
+options cx88_alsa index=-2
+options snd-atiixp-modem index=-2
+options snd-intel8x0m index=-2
+options snd-via82xx-modem index=-2
+```
+
+The option can be placed before or after the regular expression. Other important grep options
+are:
+
+-c or --count Instead of displaying the search results, only display the total count for how many times a match occurs in any given file.
+
+-i or --ignore-case Turn the search case-insensitive.
+
+-f FILE or --file=FILE Indicate a file containing the regular expression to use.
+
+-n or --line-number Show the number of the line.
+
+-v or --invert-match Select every line, except those containing matches.
+
+-H or --with-filename Print also the name of the file containing the line.
+
+-z or --null-data Rather than have grep treat input and output data streams as separate lines (using the newline
+by default) instead take the input or output as a sequence of lines. When combining output
+from the find command using its -print0 option with the grep command, the -z or --null
+-data option should be used to process the stream in the same manner.
+
+```bash
+$ find /usr/share/doc -type f -exec grep -i '3d modeling' "{}" \; | cut -c -100
+artistic aspects of 3D modeling. Thus this might be the application you are
+This major approach of 3D modeling has not been supported
+oce is a C++ 3D modeling library. It can be used to develop CAD/CAM softwares, for instance
+[FreeCad
+```
+
+---
+
+## sed - stream editor
+
+The purpose of the sed program is to modify text-based data in a non-interactive way. It means
+that all the editing is made by predefined instructions, not by arbitrarily typing directly into a text
+displayed on the screen.
+
+```bash 
+sed 's/old/new/'
+
+
+sed 's/old/new/'      # replace first match in a line
+sed 's/old/new/g'     # replace all matches in a line
+sed '2d' file.txt     # delete line 2
+sed -n '3p' file.txt  # print only line 3
+```
+
+---
