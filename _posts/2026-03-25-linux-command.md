@@ -335,3 +335,19 @@ p
 n
 w
 ```
+
+## Test for fdisk,mount,mkfs
+
+```bash
+pwd                                     # Check the current working directory.
+dd if=/dev/zero of=testdisk.img bs=1M count=1024   # Create a 1 GB empty disk image file.
+lsblk                                   # Show block devices and partitions.
+sudo losetup -fP testdisk.img           # Attach the image file to the first free loop device.
+losetup -a                              # Show all active loop devices.
+sudo fdisk /dev/loop0                   # Open fdisk to create or manage partitions.
+sudo mkfs.ext2 /dev/loop0p2             # Create an ext2 filesystem on partition 2.
+sudo mkdir -p /mnt/testdisk             # Create the mount point directory.
+sudo mount /dev/loop0p2 /mnt/testdisk   # Mount the partition to /mnt/testdisk.
+df -h                                   # Check mounted filesystems and disk usage.
+mount | grep loop0                      # Verify that the loop device is mounted.
+```
