@@ -249,3 +249,89 @@ sed -n '3p' file.txt  # print only line 3
 ```
 
 ---
+
+## fdisk
+
+### Understanding MBR and GPT
+There are two main ways of storing partition information on hard disks. The first one is MBR
+(Master Boot Record), and the second one is GPT (GUID Partition Table).
+
+- MBR This is a remnant from the early days of MS-DOS (more specifically, PC-DOS 2.0 from 1983) and for decades was the standard partitioning scheme on PCs. The partition table is stored on the first sector of a disk, called the Boot Sector, along with a boot loader, which on Linux systems is usually the GRUB bootloader. But MBR has a series of limitations that hinder its use on modern systems, like the inability to address disks of more than 2 TB in size, and the limit of only 4 primary partitions per disk.
+
+- GUID A partitioning system that addresses many of the limitations of MBR. There is no practical limit on disk size, and the maximum number of partitions are limited only by the operating system itself. It is more commonly found on more modern machines that use UEFI instead of the old PC BIOS.
+
+### Managing MBR Partitions with FDISK
+
+```bash
+fdisk /dev/sda
+
+Welcome to fdisk (util-linux 2.33.1).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+Command (m for help):
+```
+
+### Printing the Current Partition Table
+
+```bash
+Command (m for help): p
+Disk /dev/sda: 111.8 GiB, 120034123776 bytes, 234441648 sectors
+Disk model: CT120BX500SSD1
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x97f8fef5
+Device    Boot      Start     End       Sectors    Size    Id  Type
+/dev/sda1           4096      226048942 226044847  107.8G  83    Linux
+/dev/sda2           226048944 234437550 8388607    4G      82 Linux swap / Solaris
+```
+
+- Device => The device assigned to the partition.
+- Boot => Shows whether the partition is “bootable” or not.
+- Start => The sector where the partition starts.
+- End => The sector where the partition ends.
+- Sectors => The total number of sectors in the partition. Multiply it by the sector size to get the partition size in bytes.
+- Size => The size of the partition in “human readable” format. In the example above, values are in gigabytes.
+- Id => The numerical value representing the partition type.
+- Type => The description for the partition type.
+
+# fdisk Command Reference
+
+| Command | Meaning |
+|---|---|
+| `m` | Display the help menu / list available commands |
+| `p` | Print the current partition table |
+| `n` | Create a new partition |
+| `d` | Delete a partition |
+| `t` | Change a partition type |
+| `w` | Write changes to disk and exit |
+| `q` | Quit without saving changes |
+| `g` | Create a new empty GPT partition table |
+| `o` | Create a new empty DOS/MBR partition table |
+| `l` | List known partition types |
+| `i` | Show information about a partition |
+| `a` | Toggle the bootable flag |
+| `F` | Display unpartitioned free space |
+| `v` | Verify the partition table |
+| `u` | Change display units |
+
+## Most Important Commands
+
+| Task | Command |
+|---|---|
+| View current partitions | `p` |
+| Create a new partition | `n` |
+| Delete a partition | `d` |
+| Change partition type | `t` |
+| Save changes | `w` |
+| Exit without saving | `q` |
+
+## Typical Workflow
+
+```bash
+sudo fdisk /dev/sdX
+p
+n
+w
+```
