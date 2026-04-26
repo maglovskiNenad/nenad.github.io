@@ -351,3 +351,13 @@ sudo mount /dev/loop0p2 /mnt/testdisk   # Mount the partition to /mnt/testdisk.
 df -h                                   # Check mounted filesystems and disk usage.
 mount | grep loop0                      # Verify that the loop device is mounted.
 ```
+
+## Mounting and Unmounting Filesystems
+
+```bash
+mount -t TYPE DEVICE MOUNTPOINT
+```
+
+- TYPE  => The type of the filesystem being mounted.
+- DEVICE  => The name of the partition containing the filesystem.
+- MOUNTPOINT => Where the filesystem will be mounted. The mounted-on directory need not be empty, although it must exist. Any files in it, however, will be inaccessible by name while the filesystem is mounted.
