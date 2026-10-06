@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Email Server"
+title: "Portfolio Deployment"
 date: 2026-10-05 09:00:00 -0500
 categories: linux
 tages: portfolio
