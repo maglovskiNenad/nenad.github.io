@@ -43,7 +43,7 @@ social:
     - https://github.com/maglovskiNenad # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - www.linkedin.com/in/nenad-maglovski-a543213b7
 
 # Site Verification Settings
 webmaster_verifications:
@@ -99,7 +99,7 @@ theme_mode: #[dark | light]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://github.com/user-attachments/assets/93607a55-8b0c-40a1-a0c9-1360c22714df
+avatar: https://github.com/user-attachments/assets/c004aa76-d158-4ed5-b08c-9b9790fd122c"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
